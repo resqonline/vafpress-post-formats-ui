@@ -96,7 +96,7 @@ jQuery(function($) {
 	$(document).trigger('vp-post-formats-ui-init');
 	
 	// tab switch
-	$('#vp-post-formats-ui-tabs a').live('click', function(e) {
+	$('#vp-post-formats-ui-tabs a').on('click', function(e) {
 		VP_PFUI.postFormats.switchTab(this);
 		e.stopPropagation();
 		e.preventDefault();
